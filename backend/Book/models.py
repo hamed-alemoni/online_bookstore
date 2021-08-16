@@ -10,17 +10,26 @@ class BookPublisher(models.Model):
     slug = models.SlugField(max_length=100, unique=True)
     description = models.TextField()
 
+    def __str__(self):
+        return self.title
+
 
 # create subject of book model
 class BookSubject(models.Model):
     title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=100, unique=True)
 
+    def __str__(self):
+        return self.title
+
 
 # create type of book model
 class BookType(models.Model):
     title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=100, unique=True)
+
+    def __str__(self):
+        return self.title
 
 
 # create book model
@@ -37,6 +46,10 @@ class Book(models.Model):
     international_standard_book_number = models.IntegerField()
 
     # book info with relation
-    book_publisher = models.ForeignKey(BookPublisher, default=None, on_delete=models.CASCADE, related_name='book_publishers')
+    book_publisher = models.ForeignKey(BookPublisher, default=None, on_delete=models.CASCADE,
+                                       related_name='book_publishers')
     book_type = models.ForeignKey(BookType, default=None, on_delete=models.CASCADE, related_name='book_types')
     book_subject = models.ForeignKey(BookSubject, default=None, on_delete=models.CASCADE, related_name='book_subjects')
+
+    def __str__(self):
+        return self.title
