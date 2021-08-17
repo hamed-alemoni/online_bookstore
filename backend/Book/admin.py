@@ -25,8 +25,6 @@ class BookPublisherAdmin(admin.ModelAdmin):
     # search according to these attribute
     search_fields = ('title', 'description')
     prepopulated_fields = {'slug': ('title',)}
-    # ordering according to these attribute
-    ordering = ['']
 
 
 class BookSubjectAndBookTypeAdmin(admin.ModelAdmin):
@@ -37,8 +35,6 @@ class BookSubjectAndBookTypeAdmin(admin.ModelAdmin):
     # search according to these attribute
     search_fields = ('title',)
     prepopulated_fields = {'slug': ('title',)}
-    # ordering according to these attribute
-    ordering = ['']
 
 
 # register Book module
