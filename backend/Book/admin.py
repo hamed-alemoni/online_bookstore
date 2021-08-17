@@ -1,12 +1,51 @@
 from django.contrib import admin
-from .models import Book, BookPublisher,BookSubject,BookType
+from .models import Book, BookPublisher, BookSubject, BookType
+
+
 # Register your models here.
 
+class BookAdmin(admin.ModelAdmin):
+    # show this attribute
+    list_display = ('title', 'image', 'status', 'author', 'slug', 'number_of_pages', 'weight', 'released_year',
+                    'international_standard_book_number')
+    # filter according to these attribute
+    list_filter = ('status', 'released_year')
+    # search according to these attribute
+    search_fields = ('title', 'released_year', 'description')
+    prepopulated_fields = {'slug': ('title',)}
+    # ordering according to these attribute
+    ordering = ['status', '-released_year']
+
+
+class BookPublisherAdmin(admin.ModelAdmin):
+    # show this attribute
+    list_display = ('title', 'description', 'slug')
+    # filter according to these attribute
+    list_filter = ('title',)
+    # search according to these attribute
+    search_fields = ('title', 'description')
+    prepopulated_fields = {'slug': ('title',)}
+    # ordering according to these attribute
+    ordering = ['']
+
+
+class BookSubjectAndBookTypeAdmin(admin.ModelAdmin):
+    # show this attribute
+    list_display = ('title', 'slug')
+    # filter according to these attribute
+    list_filter = ('title',)
+    # search according to these attribute
+    search_fields = ('title',)
+    prepopulated_fields = {'slug': ('title',)}
+    # ordering according to these attribute
+    ordering = ['']
+
+
 # register Book module
-admin.site.register(Book)
+admin.site.register(Book, BookAdmin)
 # register Publisher module
-admin.site.register(BookPublisher)
+admin.site.register(BookPublisher, BookPublisherAdmin)
 # register BookSubject module
-admin.site.register(BookSubject)
+admin.site.register(BookSubject, BookSubjectAndBookTypeAdmin)
 # register BookType module
-admin.site.register(BookType)
+admin.site.register(BookType, BookSubjectAndBookTypeAdmin)
