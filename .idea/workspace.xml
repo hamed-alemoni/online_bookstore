@@ -2,21 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72ff8922-a459-4b40-8128-1132742beb80" name="Default Changelist" comment="add admin class for all models">
-      <change afterPath="$PROJECT_DIR$/backend/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/serializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0003_auto_20210818_1716.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0004_alter_book_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0005_alter_book_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0006_alter_book_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0007_remove_book_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0008_book_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0009_remove_book_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0010_book_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0011_alter_book_status.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Book/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Book/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -86,7 +103,8 @@
       <updated>1629016726693</updated>
       <workItem from="1629016751695" duration="71000" />
       <workItem from="1629113940663" duration="7102000" />
-      <workItem from="1629201978464" duration="7115000" />
+      <workItem from="1629201978464" duration="7582000" />
+      <workItem from="1629288621966" duration="7755000" />
     </task>
     <task id="LOCAL-00001" summary="add __str__ method to show title of each objects of classes in admin panel">
       <created>1629122820259</created>
@@ -109,7 +127,49 @@
       <option name="project" value="LOCAL" />
       <updated>1629206355286</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add status feature to Book model">
+      <created>1629209213967</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1629209213967</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add rest_framework to installed apps">
+      <created>1629290336524</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1629290336524</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add some method to serializer to &#10;send some extra info about publisher, author, type, subject of books">
+      <created>1629299159826</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1629299159826</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add api view for booksand users">
+      <created>1629299188978</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1629299188978</updated>
+    </task>
+    <task id="LOCAL-00008" summary="set books and users urls with api root">
+      <created>1629299253668</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1629299253668</updated>
+    </task>
+    <task id="LOCAL-00009" summary="include all api urls">
+      <created>1629299332358</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1629299332358</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,17 +179,27 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add __str__ method to show title of each objects of classes in admin panel" />
     <MESSAGE value="add admin class for all models" />
-    <option name="LAST_COMMIT_MESSAGE" value="add admin class for all models" />
+    <MESSAGE value="add status feature to Book model" />
+    <MESSAGE value="add rest_framework to installed apps" />
+    <MESSAGE value="add some method to serializer to &#10;send some extra info about publisher, author, type, subject of books" />
+    <MESSAGE value="add api view for booksand users" />
+    <MESSAGE value="set books and users urls with api root" />
+    <MESSAGE value="include all api urls" />
+    <option name="LAST_COMMIT_MESSAGE" value="include all api urls" />
   </component>
   <component name="WindowStateProjectService">
     <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629118490351">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1629118490351" />
-    <state x="697" y="0" key="CommitChangelistDialog2" timestamp="1629209212585">
+    <state x="498" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1629293261145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="697" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1629209212585" />
+    <state x="498" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1629293261145" />
+    <state x="697" y="0" key="CommitChangelistDialog2" timestamp="1629299360807">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="697" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1629299360807" />
     <state x="547" y="153" key="FileChooserDialogImpl" timestamp="1629118412615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -150,13 +220,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1491" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1629122869639" />
+    <state width="187" height="463" key="HiddenNamespacesPopup" timestamp="1629291724335">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="187" height="463" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1629291724335" />
     <state x="276" y="54" key="SettingsEditor" timestamp="1629118429744">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="276" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1629118429744" />
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1629201978447">
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1629288651403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1629201978447" />
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1629288651403" />
   </component>
 </project>
