@@ -14,7 +14,6 @@
       <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0010_book_status.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0011_alter_book_status.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,7 @@
       <workItem from="1629016751695" duration="71000" />
       <workItem from="1629113940663" duration="7102000" />
       <workItem from="1629201978464" duration="7582000" />
-      <workItem from="1629288621966" duration="7755000" />
+      <workItem from="1629288621966" duration="8175000" />
     </task>
     <task id="LOCAL-00001" summary="add __str__ method to show title of each objects of classes in admin panel">
       <created>1629122820259</created>
@@ -169,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629299332358</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add api app in settings">
+      <created>1629299362211</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1629299362211</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +191,8 @@
     <MESSAGE value="add api view for booksand users" />
     <MESSAGE value="set books and users urls with api root" />
     <MESSAGE value="include all api urls" />
-    <option name="LAST_COMMIT_MESSAGE" value="include all api urls" />
+    <MESSAGE value="add api app in settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="add api app in settings" />
   </component>
   <component name="WindowStateProjectService">
     <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629118490351">
