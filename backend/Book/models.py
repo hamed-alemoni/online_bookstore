@@ -23,6 +23,15 @@ class BookSubject(models.Model):
         return self.title
 
 
+# create year of education
+class EducationYear(models.Model):
+    title = models.CharField(max_length=250)
+    slug = models.SlugField(max_length=100, unique=True)
+
+    def __str__(self):
+        return self.title
+
+
 # create type of book model
 class BookType(models.Model):
     title = models.CharField(max_length=250)
@@ -49,6 +58,7 @@ class Book(models.Model):
     weight = models.IntegerField(blank=False, null=False)
     released_year = models.DateField()
     international_standard_book_number = models.CharField(max_length=13)
+    price = models.IntegerField(blank=False, null=False, default=None)
     status = models.CharField(max_length=1, choices=STATUS_CHOICES)
 
     # book info with relation
@@ -56,6 +66,7 @@ class Book(models.Model):
                                        related_name='book_publishers')
     book_type = models.ForeignKey(BookType, default=None, on_delete=models.CASCADE, related_name='book_types')
     book_subject = models.ForeignKey(BookSubject, default=None, on_delete=models.CASCADE, related_name='book_subjects')
+    book_education_year = models.ForeignKey(EducationYear, default=None, on_delete=models.CASCADE, related_name='book_education_year')
 
     def __str__(self):
         return self.title
