@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Book, BookPublisher, BookSubject, BookType
+from .models import Book, BookPublisher, BookSubject, BookType, EducationYear
 
 
 # Register your models here.
@@ -27,7 +27,7 @@ class BookPublisherAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
 
 
-class BookSubjectAndBookTypeAdmin(admin.ModelAdmin):
+class BookSubjectAndBookTypeAdminAndEducationYear(admin.ModelAdmin):
     # show this attribute
     list_display = ('title', 'slug')
     # filter according to these attribute
@@ -42,6 +42,8 @@ admin.site.register(Book, BookAdmin)
 # register Publisher module
 admin.site.register(BookPublisher, BookPublisherAdmin)
 # register BookSubject module
-admin.site.register(BookSubject, BookSubjectAndBookTypeAdmin)
+admin.site.register(BookSubject, BookSubjectAndBookTypeAdminAndEducationYear)
 # register BookType module
-admin.site.register(BookType, BookSubjectAndBookTypeAdmin)
+admin.site.register(BookType, BookSubjectAndBookTypeAdminAndEducationYear)
+# register BookType module
+admin.site.register(EducationYear, BookSubjectAndBookTypeAdminAndEducationYear)
