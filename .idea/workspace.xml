@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72ff8922-a459-4b40-8128-1132742beb80" name="Default Changelist" comment="add admin class for all models">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0003_auto_20210818_1716.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0004_alter_book_status.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0005_alter_book_status.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0006_alter_book_status.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0007_remove_book_status.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0008_book_status.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0009_remove_book_status.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0010_book_status.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0011_alter_book_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0012_educationyear.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0013_auto_20210821_1615.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,6 +95,7 @@
       <workItem from="1629113940663" duration="7102000" />
       <workItem from="1629201978464" duration="7582000" />
       <workItem from="1629288621966" duration="8175000" />
+      <workItem from="1629543976229" duration="6626000" />
     </task>
     <task id="LOCAL-00001" summary="add __str__ method to show title of each objects of classes in admin panel">
       <created>1629122820259</created>
@@ -175,7 +167,42 @@
       <option name="project" value="LOCAL" />
       <updated>1629299362211</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add some feature to book module and create education year module">
+      <created>1629550597950</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1629550597950</updated>
+    </task>
+    <task id="LOCAL-00012" summary="create all view sets for models">
+      <created>1629550654902</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1629550654902</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add admin setting for education year model">
+      <created>1629550721245</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1629550721245</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add all serializers for models and add a method to book serializer to show education year detail in our way">
+      <created>1629550803622</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1629550803622</updated>
+    </task>
+    <task id="LOCAL-00015" summary="create all remaining models router">
+      <created>1629550873986</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1629550873986</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +219,12 @@
     <MESSAGE value="set books and users urls with api root" />
     <MESSAGE value="include all api urls" />
     <MESSAGE value="add api app in settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="add api app in settings" />
+    <MESSAGE value="add some feature to book module and create education year module" />
+    <MESSAGE value="create all view sets for models" />
+    <MESSAGE value="add admin setting for education year model" />
+    <MESSAGE value="add all serializers for models and add a method to book serializer to show education year detail in our way" />
+    <MESSAGE value="create all remaining models router" />
+    <option name="LAST_COMMIT_MESSAGE" value="create all remaining models router" />
   </component>
   <component name="WindowStateProjectService">
     <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629118490351">
@@ -203,10 +235,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1629293261145" />
-    <state x="697" y="0" key="CommitChangelistDialog2" timestamp="1629299360807">
+    <state x="697" y="0" key="CommitChangelistDialog2" timestamp="1629550872831">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="697" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1629299360807" />
+    <state x="697" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1629550872831" />
     <state x="547" y="153" key="FileChooserDialogImpl" timestamp="1629118412615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -235,9 +267,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="276" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1629118429744" />
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1629288651403">
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1629544719486">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1629288651403" />
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1629544719486" />
   </component>
 </project>
