@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72ff8922-a459-4b40-8128-1132742beb80" name="Default Changelist" comment="add admin class for all models">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/hamed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Book/migrations/0014_alter_book_status.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Book/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Book/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +99,8 @@
       <workItem from="1629288621966" duration="8175000" />
       <workItem from="1629543976229" duration="6774000" />
       <workItem from="1629631239641" duration="4987000" />
-      <workItem from="1629716565318" duration="2893000" />
+      <workItem from="1629716565318" duration="3186000" />
+      <workItem from="1629803465990" duration="3720000" />
     </task>
     <task id="LOCAL-00001" summary="add __str__ method to show title of each objects of classes in admin panel">
       <created>1629122820259</created>
@@ -225,7 +228,28 @@
       <option name="project" value="LOCAL" />
       <updated>1629636318852</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add authentication and jwt urls">
+      <created>1629720109462</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1629720109462</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add combine of authentication and jwt to the project">
+      <created>1629720207103</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1629720207103</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add filter app and default filter backends to search, filter and ordering">
+      <created>1629807798633</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1629807798633</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +274,10 @@
     <MESSAGE value="add permissions to view class of api app" />
     <MESSAGE value="write requirement permissions for api app" />
     <MESSAGE value="add default permission" />
-    <option name="LAST_COMMIT_MESSAGE" value="add default permission" />
+    <MESSAGE value="add authentication and jwt urls" />
+    <MESSAGE value="add combine of authentication and jwt to the project" />
+    <MESSAGE value="add filter app and default filter backends to search, filter and ordering" />
+    <option name="LAST_COMMIT_MESSAGE" value="add filter app and default filter backends to search, filter and ordering" />
   </component>
   <component name="WindowStateProjectService">
     <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629118490351">
@@ -261,10 +288,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1629293261145" />
-    <state x="697" y="0" key="CommitChangelistDialog2" timestamp="1629720204335">
+    <state x="697" y="0" key="CommitChangelistDialog2" timestamp="1629807913456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="697" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1629720204335" />
+    <state x="697" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1629807913456" />
     <state x="547" y="153" key="FileChooserDialogImpl" timestamp="1629118412615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -293,9 +320,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="276" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1629118429744" />
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1629716564425">
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1629803466335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1629716564425" />
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1629803466335" />
   </component>
 </project>
