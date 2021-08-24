@@ -27,6 +27,17 @@ class BookViewSet(ModelViewSet):
     queryset = Book.objects.all()
     # determine serializer class
     serializer_class = BookSerializer
+    # determine fields of filters
+    filterset_fields = ['title', 'author', 'price', 'status', 'book_publisher__title', 'book_type__title', 'book_subject__title',
+                        'book_education_year__title']
+
+    # determine fields of search filter
+    search_fields = ['title', 'author', 'book_publisher__title', 'book_type__title', 'book_subject__title',
+                     'book_education_year__title']
+    # determine fields of ordering
+    ordering_fields = ['price', 'released_year__year', 'status']
+    # default ordering
+    ordering = ['-released_year__year']
 
     # add a new permission for this view
     def get_permissions(self):
