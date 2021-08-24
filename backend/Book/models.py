@@ -43,11 +43,6 @@ class BookType(models.Model):
 
 # create book model
 class Book(models.Model):
-    STATUS_CHOICES = (
-        ('d', 'Draft'),
-        ('p', 'Published'),
-    )
-
     # book info without relation
     title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=100, unique=True)
@@ -59,7 +54,7 @@ class Book(models.Model):
     released_year = models.DateField()
     international_standard_book_number = models.CharField(max_length=13)
     price = models.IntegerField(blank=False, null=False, default=None)
-    status = models.CharField(max_length=1, choices=STATUS_CHOICES)
+    status = models.BooleanField(default=False)
 
     # book info with relation
     book_publisher = models.ForeignKey(BookPublisher, default=None, on_delete=models.CASCADE,
