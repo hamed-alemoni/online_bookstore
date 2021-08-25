@@ -1,10 +1,11 @@
 from rest_framework import serializers
 from Book.models import Book, BookSubject, BookType, BookPublisher, EducationYear
 from django.contrib.auth import get_user_model
+from drf_dynamic_fields import DynamicFieldsMixin
 
 
 # create a serializer for Book model
-class BookSerializer(serializers.ModelSerializer):
+class BookSerializer(DynamicFieldsMixin, serializers.ModelSerializer):
     # return author's info
     def get_author_info(self, book):
         info = {
@@ -72,28 +73,28 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 # create a serializer for Book Subject model
-class BookSubjectSerializer(serializers.ModelSerializer):
+class BookSubjectSerializer(DynamicFieldsMixin, serializers.ModelSerializer):
     class Meta:
         model = BookSubject
         fields = '__all__'
 
 
 # create a serializer for Book Type model
-class BookTypeSerializer(serializers.ModelSerializer):
+class BookTypeSerializer(DynamicFieldsMixin, serializers.ModelSerializer):
     class Meta:
         model = BookType
         fields = '__all__'
 
 
 # create a serializer for Book Publisher model
-class BookPublisherSerializer(serializers.ModelSerializer):
+class BookPublisherSerializer(DynamicFieldsMixin, serializers.ModelSerializer):
     class Meta:
         model = BookPublisher
         fields = '__all__'
 
 
 # create a serializer for Book Education Year model
-class EducationYearSerializer(serializers.ModelSerializer):
+class EducationYearSerializer(DynamicFieldsMixin, serializers.ModelSerializer):
     class Meta:
         model = EducationYear
         fields = '__all__'
