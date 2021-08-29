@@ -1,6 +1,6 @@
 from django.contrib.auth import views
 from django.urls import path
-from .views import home, BookListView
+from .views import BookListView
 
 app_name = 'account'
 urlpatterns = [
