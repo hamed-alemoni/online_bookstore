@@ -45,6 +45,5 @@ def jalali_converter(time):
     for index, month in enumerate(jalali_months):
         if time_to_list[1] == index + 1:
             time_to_list[1] = month
-    hour = 'ساعت'
     new_time = f'{time_to_list[0]}'
     return persian_numbers(new_time)
