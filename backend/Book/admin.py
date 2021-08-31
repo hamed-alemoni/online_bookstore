@@ -6,8 +6,8 @@ from .models import Book, BookPublisher, BookSubject, BookType, EducationYear
 
 class BookAdmin(admin.ModelAdmin):
     # show this attribute
-    list_display = ('title', 'image_tag', 'status', 'author', 'slug', 'number_of_pages', 'weight', 'year',
-                    'amount', 'international_standard_book_number')
+    list_display = ('title', 'image', 'status', 'author', 'amount', 'slug', 'number_of_pages', 'weight', 'year',
+                    'international_standard_book_number')
     # filter according to these attribute
     list_filter = ('status', 'released_year')
     # search according to these attribute
