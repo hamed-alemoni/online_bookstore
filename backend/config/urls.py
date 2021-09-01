@@ -25,3 +25,8 @@ urlpatterns = [
     path('api/dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')),
     path('password/reset/confirm/<uidb64>/<token>', PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
 ]
+
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
