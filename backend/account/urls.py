@@ -1,6 +1,6 @@
 from django.contrib.auth import views
 from django.urls import path
-from .views import BookListView
+from .views import BookListView, BookCreateView
 
 app_name = 'account'
 urlpatterns = [
@@ -17,5 +17,6 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    path('', BookListView.as_view(), name='home')
+    path('', BookListView.as_view(), name='home'),
+    path('book/create/', BookCreateView.as_view(), name='book-create')
 ]
