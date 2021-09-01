@@ -1,0 +1,81 @@
+{% extends 'registration\base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}{% block title-meta %}
+    افزودن کتاب جدید
+{% endblock %}{% endblock %}
+{% block main %}
+    <div class="col-md-12 ">
+        <!-- general form elements disabled -->
+        <div class="card card-warning">
+            <div class="card-header">
+                <h3 class="card-title mb-0 float-left">افزودن کتاب جدید</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+                <form method="post">{% csrf_token %}
+        <div class="form-row">
+            <div class="form-group col-md-6 mb-0">
+                {{ form.title|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-6 mb-0">
+                {{ form.slug|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-12 mb-0">
+                {{ form.description|as_crispy_field }}
+            </div>
+
+            <div class="form-group col-md-6 mb-0">
+                {{ form.image|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-6 mb-0">
+                <br>
+                {{ form.status|as_crispy_field }}
+            </div>
+
+            <div class="form-group col-md-6 mb-0">
+                {{ form.number_of_pages|as_crispy_field }}
+            </div>
+
+            <div class="form-group col-md-6 mb-0">
+                {{ form.weight|as_crispy_field }}
+            </div>
+
+            <div class="form-group col-md-6 mb-0">
+                {{ form.released_year|as_crispy_field }}
+            </div>
+
+            <div class="form-group col-md-6 mb-0">
+                {{ form.international_standard_book_number|as_crispy_field }}
+            </div>
+
+            <div class="form-group col-md-6 mb-0">
+                {{ form.price|as_crispy_field }}
+            </div>
+
+            <div class="form-group col-md-6 mb-0">
+                {{ form.amount|as_crispy_field }}
+            </div>
+
+            <div class="form-group col-md-6 mb-0">
+                {{ form.book_publisher|as_crispy_field }}
+            </div>
+
+            <div class="form-group col-md-6 mb-0">
+                {{ form.book_type|as_crispy_field }}
+            </div>
+
+            <div class="form-group col-md-6 mb-0">
+                {{ form.book_subject|as_crispy_field }}
+            </div>
+
+            <div class="form-group col-md-6 mb-0">
+                {{ form.book_education_year|as_crispy_field }}
+            </div>
+        </div>
+        <button class="btn btn-success" formenctype="multipart/form-data">افزودن</button>
+    </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
