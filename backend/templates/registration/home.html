@@ -1,5 +1,7 @@
 {% extends 'registration\base.html' %}
-{% block title %}لیست کتاب ها{% endblock %}
+{% block title %}{% block title-meta %}
+    لیست کتاب ها
+{% endblock %}{% endblock %}
 {% block main %}
     <div class="row">
         <div class="col-12">
@@ -27,12 +29,12 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
                             {% for book in object_list %}
-                                <td><img src="{{ book.image.url }}"></td>
+                                <tr>
+                                <td><img src="{{ book.image.url }}" style="width: 100px; height: 60px;"></td>
                                 <td>{{ book.title }}</td>
                                 <td>{{ book.author.get_full_name     }}</td>
-                                <td>{{ book.description | truncatewords:"30" }}</td>
+                                <td>{{ book.description | striptags | truncatewords:"30" }}</td>
                                 <td>{{ book.number_of_pages }}</td>
                                 <td>{{ book.weight }}</td>
                                 <td>{{ book.year }}</td>
@@ -50,8 +52,8 @@
                                         <span class="badge badge-danger">نا موجود</span>
                                     {% endif %}
                                 </td>
-                            {% endfor %}
                         </tr>
+                            {% endfor %}
 
                         </tbody>
                     </table>
