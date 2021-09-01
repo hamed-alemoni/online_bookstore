@@ -1,5 +1,7 @@
 from django.db import models
+from django.urls import reverse
 from django.contrib.auth.models import User
+from django.utils import timezone
 from django.utils.html import format_html
 from extensions.utils import jalali_converter
 
@@ -55,7 +57,7 @@ class Book(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='authors')
     number_of_pages = models.IntegerField(blank=False, null=False)
     weight = models.IntegerField(blank=False, null=False)
-    released_year = models.DateTimeField()
+    released_year = models.DateTimeField(default=timezone.now)
     international_standard_book_number = models.CharField(max_length=13)
     price = models.IntegerField(blank=False, null=False, default=None)
     status = models.BooleanField(default=False)
@@ -68,6 +70,9 @@ class Book(models.Model):
     book_subject = models.ForeignKey(BookSubject, default=None, on_delete=models.CASCADE, related_name='book_subjects')
     book_education_year = models.ForeignKey(EducationYear, default=None, on_delete=models.CASCADE,
                                             related_name='book_education_year')
+
+    def get_absolute_url(self):
+        return reverse('account:home')
 
     def __str__(self):
         return self.title
