@@ -15,7 +15,7 @@ module.exports = function(grunt) {
                 banner: "<%= banner %>"
             },
             dist: {
-                src: "<%= concat.assets.dest %>",
+                src: "<%= concat.dist.dest %>",
                 dest: "<%= pkg.name %>-min.js"
             },
             nodeps: {
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     flatten: true,
-                    src: ["<%= concat.assets.dest %>", "<%= concat.nodeps.dest %>"],
+                    src: ["<%= concat.dist.dest %>", "<%= concat.nodeps.dest %>"],
                     dest: "./"
                 }]
             }
