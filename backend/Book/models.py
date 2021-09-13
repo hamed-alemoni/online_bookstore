@@ -19,6 +19,9 @@ class BookPublisher(models.Model):
     def __str__(self):
         return self.title
 
+    def get_absolute_url(self):
+        return reverse('account:book-publisher-list')
+
 
 # create subject of book model
 class BookSubject(models.Model):
@@ -27,6 +30,9 @@ class BookSubject(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('account:book-subject-list')
 
 
 # create year of education
