@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="72ff8922-a459-4b40-8128-1132742beb80" name="Default Changelist" comment="convert grigorian">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/registration/adminLTE/plugins/chart.js/Chart.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/registration/adminLTE/plugins/chart.js/Chart.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/registration/adminLTE/plugins/chart.js/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/registration/adminLTE/plugins/chart.js/Chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/registration/adminLTE/plugins/datatables-fixedcolumns/js/dataTables.fixedColumns.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/registration/adminLTE/plugins/datatables-fixedcolumns/js/dataTables.fixedColumns.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/registration/adminLTE/plugins/jquery-mapael/jquery.mapael.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/registration/adminLTE/plugins/jquery-mapael/jquery.mapael.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/registration/adminLTE/plugins/jszip/jszip.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/registration/adminLTE/plugins/jszip/jszip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/registration/adminLTE/plugins/pdfmake/pdfmake.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/registration/adminLTE/plugins/pdfmake/pdfmake.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/registration/adminLTE/plugins/raphael/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/registration/adminLTE/plugins/raphael/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/rest_framework/docs/js/highlight.pack.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/rest_framework/docs/js/highlight.pack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Book/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Book/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/account/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +107,7 @@
       <workItem from="1630410540077" duration="10143000" />
       <workItem from="1630498994227" duration="8651000" />
       <workItem from="1630508671054" duration="7000" />
+      <workItem from="1631541229453" duration="3936000" />
     </task>
     <task id="LOCAL-00001" summary="add __str__ method to show title of each objects of classes in admin panel">
       <created>1629122820259</created>
@@ -366,7 +361,49 @@
       <option name="project" value="LOCAL" />
       <updated>1630508061305</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="write create and list view for BookPublisher and BookSubject models">
+      <created>1631545217140</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1631545217140</updated>
+    </task>
+    <task id="LOCAL-00038" summary="html view for book subject list">
+      <created>1631545247781</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1631545247781</updated>
+    </task>
+    <task id="LOCAL-00039" summary="html view for book subject create update">
+      <created>1631545357776</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1631545357776</updated>
+    </task>
+    <task id="LOCAL-00040" summary="html view for book publisher list">
+      <created>1631545389826</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1631545389826</updated>
+    </task>
+    <task id="LOCAL-00041" summary="html view for book publisher create update">
+      <created>1631545408065</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1631545408065</updated>
+    </task>
+    <task id="LOCAL-00042" summary="add 4 items to this view to create BookPublisher BookSubject and see list of them">
+      <created>1631545515725</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1631545515725</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,12 +411,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add some feature to book module and create education year module" />
-    <MESSAGE value="create all view sets for models" />
-    <MESSAGE value="add admin setting for education year model" />
-    <MESSAGE value="add all serializers for models and add a method to book serializer to show education year detail in our way" />
-    <MESSAGE value="create all remaining models router" />
-    <MESSAGE value="add permissions to view class of api app" />
     <MESSAGE value="write requirement permissions for api app" />
     <MESSAGE value="add default permission" />
     <MESSAGE value="add authentication and jwt urls" />
@@ -399,7 +430,13 @@
     <MESSAGE value="convert gregorian to jalali as our format" />
     <MESSAGE value="convert grigorian" />
     <MESSAGE value="add some styles for image and add attr for description" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some styles for image and add attr for description" />
+    <MESSAGE value="write create and list view for BookPublisher and BookSubject models" />
+    <MESSAGE value="html view for book subject list" />
+    <MESSAGE value="html view for book subject create update" />
+    <MESSAGE value="html view for book publisher list" />
+    <MESSAGE value="html view for book publisher create update" />
+    <MESSAGE value="add 4 items to this view to create BookPublisher BookSubject and see list of them" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 4 items to this view to create BookPublisher BookSubject and see list of them" />
   </component>
   <component name="WindowStateProjectService">
     <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630251721688">
@@ -410,10 +447,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1629293261145" />
-    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1630508058805">
+    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1631545584745">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1630508058805" />
+    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1631545584745" />
     <state x="547" y="153" key="FileChooserDialogImpl" timestamp="1630244815828">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -442,9 +479,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="276" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1630245706887" />
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1630499440958">
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1631541234085">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1630499440958" />
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1631541234085" />
   </component>
 </project>
