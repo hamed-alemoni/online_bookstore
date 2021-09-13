@@ -43,10 +43,35 @@
                                 <p>لیست کتاب ها</p>
                             </a>
                         </li>
+
                         <li class="nav-item">
                             <a href="{% url 'account:book-create' %}" class="nav-link">
                                 <i class="fa fa-edit nav-icon"></i>
                                 <p>افزودن کتاب جدید</p>
+                            </a>
+                        </li>
+                         <li class="nav-item">
+                            <a href="{% url 'account:book-publisher-list' %}" class="nav-link active">
+                                <i class="fa fa-list nav-icon"></i>
+                                <p>لیست انتشارات</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'account:book-publisher-create' %}" class="nav-link">
+                                <i class="fa fa-edit nav-icon"></i>
+                                <p>افزودن انتشارات جدید</p>
+                            </a>
+                        </li>
+                         <li class="nav-item">
+                            <a href="{% url 'account:book-subject-list' %}" class="nav-link active">
+                                <i class="fa fa-list nav-icon"></i>
+                                <p>لیست موضوعات</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'account:book-subject-create' %}" class="nav-link">
+                                <i class="fa fa-edit nav-icon"></i>
+                                <p>افزودن موضوع جدید</p>
                             </a>
                         </li>
 
