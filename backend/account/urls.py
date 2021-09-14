@@ -1,7 +1,7 @@
 from django.contrib.auth import views
 from django.urls import path
 from .views import BookListView, BookCreateView, BookPublisherListView, BookPublisherCreateView, BookSubjectListView, \
-    BookSubjectCreateView
+    BookSubjectCreateView, BookTypeListView, BookTypeCreateView, EducationYearListView, EducationYearCreateView
 
 app_name = 'account'
 urlpatterns = [
@@ -24,4 +24,8 @@ urlpatterns += [
     path('book-publisher/create/', BookPublisherCreateView.as_view(), name='book-publisher-create'),
     path('book-subject/list/', BookSubjectListView.as_view(), name='book-subject-list'),
     path('book-subject/create/', BookSubjectCreateView.as_view(), name='book-subject-create'),
+    path('book-type/list/', BookTypeListView.as_view(), name='book-type-list'),
+    path('book-type/create/', BookTypeCreateView.as_view(), name='book-type-create'),
+    path('education-year/list/', EducationYearListView.as_view(), name='education-year-list'),
+    path('education-year/create/', EducationYearCreateView.as_view(), name='education-year-create'),
 ]
