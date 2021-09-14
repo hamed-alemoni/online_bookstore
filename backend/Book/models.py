@@ -43,6 +43,9 @@ class EducationYear(models.Model):
     def __str__(self):
         return self.title
 
+    def get_absolute_url(self):
+        return reverse('account:education-year-list')
+
 
 # create type of book model
 class BookType(models.Model):
@@ -51,6 +54,9 @@ class BookType(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('account:book-type-list')
 
 
 # create book model
