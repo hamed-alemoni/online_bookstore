@@ -1,0 +1,32 @@
+{% extends 'registration\base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}{% block title-meta %}
+    افزودن نوع جدید
+{% endblock %}{% endblock %}
+
+{% block main %}
+
+    <div class="col-md-12 ">
+        <!-- general form elements disabled -->
+        <div class="card card-warning">
+            <div class="card-header">
+                <h3 class="card-title mb-0 float-left">افزودن نوع جدید</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+                <form method="post">{% csrf_token %}
+        <div class="form-row">
+            <div class="form-group col-md-6 mb-0">
+                {{ form.title|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-6 mb-0">
+                {{ form.slug|as_crispy_field }}
+            </div>
+        </div>
+        <button class="btn btn-success" formenctype="multipart/form-data">افزودن</button>
+    </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
