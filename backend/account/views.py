@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView, CreateView
-from Book.models import Book, BookPublisher, BookSubject
+from Book.models import Book, BookPublisher, BookSubject, BookType, EducationYear
 
 
 # Create your views here.
@@ -63,3 +63,31 @@ class BookSubjectCreateView(LoginRequiredMixin, CreateView):
         'slug',
     ]
     template_name = 'registration/book_subject_create_update.html'
+
+
+class BookTypeListView(LoginRequiredMixin, ListView):
+    queryset = BookType.objects.all()
+    template_name = 'registration/book_type_list.html'
+
+
+class BookTypeCreateView(LoginRequiredMixin, CreateView):
+    model = BookType
+    fields = [
+        'title',
+        'slug',
+    ]
+    template_name = 'registration/book_type_create_update.html'
+
+
+class EducationYearListView(LoginRequiredMixin, ListView):
+    queryset = EducationYear.objects.all()
+    template_name = 'registration/education_year_list.html'
+
+
+class EducationYearCreateView(LoginRequiredMixin, CreateView):
+    model = EducationYear
+    fields = [
+        'title',
+        'slug',
+    ]
+    template_name = 'registration/education_year_create_update.html'
