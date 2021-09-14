@@ -1,0 +1,32 @@
+{% extends 'registration\base.html' %}
+{% block title %}{% block title-meta %}
+    لیست سال تحصیلی
+{% endblock %}{% endblock %}
+{% block main %}
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <!-- /.card-header -->
+                <div class="card-body table-responsive p-0">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>عنوان سال تحصیلی</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            {% for book in object_list %}
+                                <tr>
+                                <td>{{ book.title }}</td>
+                                </tr>
+                            {% endfor %}
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+    </div>
+{% endblock %}
