@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="72ff8922-a459-4b40-8128-1132742beb80" name="Default Changelist" comment="convert grigorian">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Book/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Book/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/account/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,28 +105,8 @@
       <workItem from="1630410540077" duration="10143000" />
       <workItem from="1630498994227" duration="8651000" />
       <workItem from="1630508671054" duration="7000" />
-      <workItem from="1631541229453" duration="3936000" />
-    </task>
-    <task id="LOCAL-00001" summary="add __str__ method to show title of each objects of classes in admin panel">
-      <created>1629122820259</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1629122820259</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add admin class for all models">
-      <created>1629206088121</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1629206088121</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add admin class for all models">
-      <created>1629206355286</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1629206355286</updated>
+      <workItem from="1631541229453" duration="4179000" />
+      <workItem from="1631619562077" duration="1864000" />
     </task>
     <task id="LOCAL-00004" summary="add status feature to Book model">
       <created>1629209213967</created>
@@ -403,7 +381,77 @@
       <option name="project" value="LOCAL" />
       <updated>1631545515725</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="add url for book publisher and book subject to create them and see their list">
+      <created>1631545585864</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1631545585864</updated>
+    </task>
+    <task id="LOCAL-00044" summary="add get absolute url for BookPublisher and BookSubject models">
+      <created>1631545628894</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1631545628894</updated>
+    </task>
+    <task id="LOCAL-00045" summary="add get absolute url to BookType and EducationYear models">
+      <created>1631621169564</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1631621169564</updated>
+    </task>
+    <task id="LOCAL-00046" summary="add BookType list and create view and EducationYear list and create view">
+      <created>1631621222124</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1631621222124</updated>
+    </task>
+    <task id="LOCAL-00047" summary="html view for education year create update">
+      <created>1631621263738</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1631621263738</updated>
+    </task>
+    <task id="LOCAL-00048" summary="html view for education year list">
+      <created>1631621284686</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1631621284686</updated>
+    </task>
+    <task id="LOCAL-00049" summary="html view for book type create update">
+      <created>1631621314433</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1631621314433</updated>
+    </task>
+    <task id="LOCAL-00050" summary="html view for book type list">
+      <created>1631621339069</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1631621339070</updated>
+    </task>
+    <task id="LOCAL-00051" summary="add option for education year and book type to create and view their list">
+      <created>1631621393400</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1631621393400</updated>
+    </task>
+    <task id="LOCAL-00052" summary="add url for book type list and create and education year list and create">
+      <created>1631621434096</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1631621434096</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,16 +459,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="write requirement permissions for api app" />
-    <MESSAGE value="add default permission" />
-    <MESSAGE value="add authentication and jwt urls" />
-    <MESSAGE value="add combine of authentication and jwt to the project" />
-    <MESSAGE value="add filter app and default filter backends to search, filter and ordering" />
-    <MESSAGE value="add 4 fields for searching, filtering and ordering to book view set" />
-    <MESSAGE value="change type of status to boolean field" />
-    <MESSAGE value="make most serializers dynamic" />
-    <MESSAGE value="add static settings to use it, add widget tweaks" />
-    <MESSAGE value="add this styles to make login page right align" />
     <MESSAGE value="remove additional method" />
     <MESSAGE value="show full name of user that login" />
     <MESSAGE value="remove an unusable import" />
@@ -436,7 +474,17 @@
     <MESSAGE value="html view for book publisher list" />
     <MESSAGE value="html view for book publisher create update" />
     <MESSAGE value="add 4 items to this view to create BookPublisher BookSubject and see list of them" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 4 items to this view to create BookPublisher BookSubject and see list of them" />
+    <MESSAGE value="add url for book publisher and book subject to create them and see their list" />
+    <MESSAGE value="add get absolute url for BookPublisher and BookSubject models" />
+    <MESSAGE value="add get absolute url to BookType and EducationYear models" />
+    <MESSAGE value="add BookType list and create view and EducationYear list and create view" />
+    <MESSAGE value="html view for education year create update" />
+    <MESSAGE value="html view for education year list" />
+    <MESSAGE value="html view for book type create update" />
+    <MESSAGE value="html view for book type list" />
+    <MESSAGE value="add option for education year and book type to create and view their list" />
+    <MESSAGE value="add url for book type list and create and education year list and create" />
+    <option name="LAST_COMMIT_MESSAGE" value="add url for book type list and create and education year list and create" />
   </component>
   <component name="WindowStateProjectService">
     <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630251721688">
@@ -447,10 +495,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1629293261145" />
-    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1631545584745">
+    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1631621433100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1631545584745" />
+    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1631621433100" />
     <state x="547" y="153" key="FileChooserDialogImpl" timestamp="1630244815828">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -479,9 +527,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="276" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1630245706887" />
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1631541234085">
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1631619567941">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1631541234085" />
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1631619567941" />
   </component>
 </project>
