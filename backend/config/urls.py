@@ -18,6 +18,7 @@ from django.urls import path, include
 from dj_rest_auth.views import PasswordResetConfirmView
 
 urlpatterns = [
+    path('', include('Book.urls')),
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),  # add api urls to main urls file
     path('account/', include('account.urls')),
