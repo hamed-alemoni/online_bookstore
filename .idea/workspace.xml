@@ -2,6 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72ff8922-a459-4b40-8128-1132742beb80" name="Default Changelist" comment="convert grigorian">
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/css/noscript.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/js/jquery.scrollex.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/js/jquery.scrolly.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/banner-image-1-1920x500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/banner-image-2-1920x500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/banner-image-3-1920x500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/banner-image-4-1920x500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/banner-image-5-1920x500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/banner-image-6-1920x500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/blog-1-720x480.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/blog-2-720x480.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/blog-3-720x480.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/blog-4-720x480.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/blog-5-720x480.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/blog-6-720x480.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/blog-fullscreen-1-1920x700.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/map.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/product-1-720x480.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/product-2-720x480.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/product-3-720x480.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/product-4-720x480.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/product-5-720x480.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/product-6-720x480.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/slider-image-1-1920x700.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/slider-image-2-1920x700.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/online_bookstore/images/slider-image-3-1920x700.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/templates/online_bookstore/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/templates/online_bookstore/blog-post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/templates/online_bookstore/blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/templates/online_bookstore/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/templates/online_bookstore/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/templates/online_bookstore/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/templates/online_bookstore/product-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/templates/online_bookstore/products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/templates/online_bookstore/terms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/templates/online_bookstore/testimonials.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +87,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -107,27 +165,7 @@
       <workItem from="1630508671054" duration="7000" />
       <workItem from="1631541229453" duration="4179000" />
       <workItem from="1631619562077" duration="1864000" />
-    </task>
-    <task id="LOCAL-00004" summary="add status feature to Book model">
-      <created>1629209213967</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1629209213967</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add rest_framework to installed apps">
-      <created>1629290336524</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1629290336524</updated>
-    </task>
-    <task id="LOCAL-00006" summary="add some method to serializer to &#10;send some extra info about publisher, author, type, subject of books">
-      <created>1629299159826</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1629299159826</updated>
+      <workItem from="1631804842916" duration="2720000" />
     </task>
     <task id="LOCAL-00007" summary="add api view for booksand users">
       <created>1629299188978</created>
@@ -451,7 +489,28 @@
       <option name="project" value="LOCAL" />
       <updated>1631621434096</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="add book list view">
+      <created>1631807535120</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1631807535136</updated>
+    </task>
+    <task id="LOCAL-00054" summary="add url for Book app(home page)">
+      <created>1631807579550</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1631807579550</updated>
+    </task>
+    <task id="LOCAL-00055" summary="include Book app urls">
+      <created>1631807607795</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1631807607795</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,9 +518,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="remove additional method" />
-    <MESSAGE value="show full name of user that login" />
-    <MESSAGE value="remove an unusable import" />
     <MESSAGE value="add login page template and use form to it works as a real login page" />
     <MESSAGE value="init of extensions" />
     <MESSAGE value="convert gregorian to jalali" />
@@ -484,7 +540,10 @@
     <MESSAGE value="html view for book type list" />
     <MESSAGE value="add option for education year and book type to create and view their list" />
     <MESSAGE value="add url for book type list and create and education year list and create" />
-    <option name="LAST_COMMIT_MESSAGE" value="add url for book type list and create and education year list and create" />
+    <MESSAGE value="add book list view" />
+    <MESSAGE value="add url for Book app(home page)" />
+    <MESSAGE value="include Book app urls" />
+    <option name="LAST_COMMIT_MESSAGE" value="include Book app urls" />
   </component>
   <component name="WindowStateProjectService">
     <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630251721688">
@@ -495,10 +554,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1629293261145" />
-    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1631621433100">
+    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1631807606344">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1631621433100" />
+    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1631807606344" />
     <state x="547" y="153" key="FileChooserDialogImpl" timestamp="1630244815828">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -527,9 +586,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="276" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1630245706887" />
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1631619567941">
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1631804845189">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1631619567941" />
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1631804845189" />
   </component>
 </project>
