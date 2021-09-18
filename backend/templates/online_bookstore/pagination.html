@@ -1,0 +1,9 @@
+{% extends 'online_bookstore/products.html' %}
+
+{% block next_page_url %}
+{% url 'book:home'  page_obj.next_page_number %}
+{% endblock %}
+
+{% block previous_page_url %}
+{% url 'book:home'  page_obj.previous_page_number %}
+{% endblock %}
