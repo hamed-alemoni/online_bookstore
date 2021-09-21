@@ -29,11 +29,11 @@
                         </tr>
                         </thead>
                         <tbody>
-                            {% for book in object_list %}
-                                <tr>
+                        {% for book in object_list %}
+                            <tr>
                                 <td><img src="{{ book.image.url }}" style="width: 100px; height: 60px;"></td>
-                                <td>{{ book.title }}</td>
-                                <td>{{ book.author.get_full_name     }}</td>
+                                <td><a href="{% url 'account:book-update' book.pk %}">{{ book.title }}</a></td>
+                                <td>{{ book.author.get_full_name }}</td>
                                 <td>{{ book.description | striptags | truncatewords:"30" }}</td>
                                 <td>{{ book.number_of_pages }}</td>
                                 <td>{{ book.weight }}</td>
@@ -51,9 +51,14 @@
                                     {% else %}
                                         <span class="badge badge-danger">نا موجود</span>
                                     {% endif %}
+                                    {% if user.is_superuser %}
+                                        <a class="badge badge-danger"
+                                           href="{% url 'account:book-delete'  book.pk %}">حذف کتاب</a>
+                                    {% endif %}
                                 </td>
-                        </tr>
-                            {% endfor %}
+
+                            </tr>
+                        {% endfor %}
 
                         </tbody>
                     </table>
