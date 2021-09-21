@@ -29,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -110,48 +110,7 @@
       <workItem from="1631804842916" duration="2720000" />
       <workItem from="1631972385845" duration="4992000" />
       <workItem from="1631977449999" duration="7000" />
-    </task>
-    <task id="LOCAL-00012" summary="create all view sets for models">
-      <created>1629550654902</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1629550654902</updated>
-    </task>
-    <task id="LOCAL-00013" summary="add admin setting for education year model">
-      <created>1629550721245</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1629550721245</updated>
-    </task>
-    <task id="LOCAL-00014" summary="add all serializers for models and add a method to book serializer to show education year detail in our way">
-      <created>1629550803622</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1629550803622</updated>
-    </task>
-    <task id="LOCAL-00015" summary="create all remaining models router">
-      <created>1629550873986</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1629550873986</updated>
-    </task>
-    <task id="LOCAL-00016" summary="add permissions to view class of api app">
-      <created>1629636252098</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1629636252098</updated>
-    </task>
-    <task id="LOCAL-00017" summary="write requirement permissions for api app">
-      <created>1629636295909</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1629636295909</updated>
+      <workItem from="1632236695678" duration="5823000" />
     </task>
     <task id="LOCAL-00018" summary="add default permission">
       <created>1629636318852</created>
@@ -454,7 +413,49 @@
       <option name="project" value="LOCAL" />
       <updated>1631977423547</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="html view to show delete confirmation">
+      <created>1632242415759</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1632242415760</updated>
+    </task>
+    <task id="LOCAL-00062" summary="write super user access mixin">
+      <created>1632242440741</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1632242440741</updated>
+    </task>
+    <task id="LOCAL-00063" summary="add two views to delete and update books">
+      <created>1632242475148</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1632242475148</updated>
+    </task>
+    <task id="LOCAL-00064" summary="add two urls to delete and update books">
+      <created>1632242510201</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1632242510201</updated>
+    </task>
+    <task id="LOCAL-00065" summary="add book title as a link to edit it">
+      <created>1632242569891</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1632242569891</updated>
+    </task>
+    <task id="LOCAL-00066" summary="add home page link">
+      <created>1632242592908</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1632242592908</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,12 +463,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add some styles for image and add attr for description" />
-    <MESSAGE value="write create and list view for BookPublisher and BookSubject models" />
-    <MESSAGE value="html view for book subject list" />
-    <MESSAGE value="html view for book subject create update" />
-    <MESSAGE value="html view for book publisher list" />
-    <MESSAGE value="html view for book publisher create update" />
     <MESSAGE value="add 4 items to this view to create BookPublisher BookSubject and see list of them" />
     <MESSAGE value="add url for book publisher and book subject to create them and see their list" />
     <MESSAGE value="add get absolute url for BookPublisher and BookSubject models" />
@@ -487,7 +482,13 @@
     <MESSAGE value="add if statement for pagination" />
     <MESSAGE value="separate pagination to make it reusable" />
     <MESSAGE value="fill this product-details.html with our info" />
-    <option name="LAST_COMMIT_MESSAGE" value="fill this product-details.html with our info" />
+    <MESSAGE value="html view to show delete confirmation" />
+    <MESSAGE value="write super user access mixin" />
+    <MESSAGE value="add two views to delete and update books" />
+    <MESSAGE value="add two urls to delete and update books" />
+    <MESSAGE value="add book title as a link to edit it" />
+    <MESSAGE value="add home page link" />
+    <option name="LAST_COMMIT_MESSAGE" value="add home page link" />
   </component>
   <component name="WindowStateProjectService">
     <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630251721688">
@@ -498,10 +499,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1629293261145" />
-    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1631977422484">
+    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1632242591841">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1631977422484" />
+    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1632242591841" />
     <state x="547" y="153" key="FileChooserDialogImpl" timestamp="1630244815828">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -530,9 +531,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="276" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1630245706887" />
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1631972414040">
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1632237283683">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1631972414040" />
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1632237283683" />
   </component>
 </project>
