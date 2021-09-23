@@ -111,48 +111,7 @@
       <workItem from="1631972385845" duration="4992000" />
       <workItem from="1631977449999" duration="7000" />
       <workItem from="1632236695678" duration="5823000" />
-    </task>
-    <task id="LOCAL-00018" summary="add default permission">
-      <created>1629636318852</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1629636318852</updated>
-    </task>
-    <task id="LOCAL-00019" summary="add authentication and jwt urls">
-      <created>1629720109462</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1629720109462</updated>
-    </task>
-    <task id="LOCAL-00020" summary="add combine of authentication and jwt to the project">
-      <created>1629720207103</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1629720207103</updated>
-    </task>
-    <task id="LOCAL-00021" summary="add filter app and default filter backends to search, filter and ordering">
-      <created>1629807798633</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1629807798633</updated>
-    </task>
-    <task id="LOCAL-00022" summary="add 4 fields for searching, filtering and ordering to book view set">
-      <created>1629807892230</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1629807892230</updated>
-    </task>
-    <task id="LOCAL-00023" summary="change type of status to boolean field">
-      <created>1629807969894</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1629807969894</updated>
+      <workItem from="1632408205199" duration="1843000" />
     </task>
     <task id="LOCAL-00024" summary="make most serializers dynamic">
       <created>1629891700073</created>
@@ -455,7 +414,49 @@
       <option name="project" value="LOCAL" />
       <updated>1632242592908</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="add all views about delete and update for all models">
+      <created>1632409958308</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1632409958308</updated>
+    </task>
+    <task id="LOCAL-00068" summary="add all urls about delete and update for all models">
+      <created>1632409976964</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1632409976964</updated>
+    </task>
+    <task id="LOCAL-00069" summary="add update and delete option for book publisher">
+      <created>1632410010360</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1632410010360</updated>
+    </task>
+    <task id="LOCAL-00070" summary="add update and delete option for book subject">
+      <created>1632410030078</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1632410030078</updated>
+    </task>
+    <task id="LOCAL-00071" summary="add update and delete option for book type">
+      <created>1632410047981</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1632410047981</updated>
+    </task>
+    <task id="LOCAL-00072" summary="add update and delete option for education year">
+      <created>1632410069566</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1632410069566</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,12 +464,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add 4 items to this view to create BookPublisher BookSubject and see list of them" />
-    <MESSAGE value="add url for book publisher and book subject to create them and see their list" />
-    <MESSAGE value="add get absolute url for BookPublisher and BookSubject models" />
-    <MESSAGE value="add get absolute url to BookType and EducationYear models" />
-    <MESSAGE value="add BookType list and create view and EducationYear list and create view" />
-    <MESSAGE value="html view for education year create update" />
     <MESSAGE value="html view for education year list" />
     <MESSAGE value="html view for book type create update" />
     <MESSAGE value="html view for book type list" />
@@ -488,7 +483,13 @@
     <MESSAGE value="add two urls to delete and update books" />
     <MESSAGE value="add book title as a link to edit it" />
     <MESSAGE value="add home page link" />
-    <option name="LAST_COMMIT_MESSAGE" value="add home page link" />
+    <MESSAGE value="add all views about delete and update for all models" />
+    <MESSAGE value="add all urls about delete and update for all models" />
+    <MESSAGE value="add update and delete option for book publisher" />
+    <MESSAGE value="add update and delete option for book subject" />
+    <MESSAGE value="add update and delete option for book type" />
+    <MESSAGE value="add update and delete option for education year" />
+    <option name="LAST_COMMIT_MESSAGE" value="add update and delete option for education year" />
   </component>
   <component name="WindowStateProjectService">
     <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630251721688">
@@ -499,10 +500,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1629293261145" />
-    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1632242591841">
+    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1632410068488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1632242591841" />
+    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1632410068488" />
     <state x="547" y="153" key="FileChooserDialogImpl" timestamp="1630244815828">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -531,9 +532,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="276" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1630245706887" />
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1632237283683">
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1632408233003">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1632237283683" />
+    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1632408233003" />
   </component>
 </project>
