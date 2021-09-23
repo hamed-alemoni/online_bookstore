@@ -18,8 +18,14 @@
                         <tbody>
                             {% for book in object_list %}
                                 <tr>
-                                <td>{{ book.title }}</td>
+                                <td><a href="{% url 'account:book-publisher-update' book.pk %}">{{ book.title }}</a></td>
                                 <td>{{ book.description | striptags | truncatewords:"30" }}</td>
+                                <td>
+                                    {% if user.is_superuser %}
+                                        <a class="badge badge-danger"
+                                           href="{% url 'account:book-publisher-delete'  book.pk %}">حذف انتشار</a>
+                                    {% endif %}
+                                </td>
                                 </tr>
                             {% endfor %}
 
