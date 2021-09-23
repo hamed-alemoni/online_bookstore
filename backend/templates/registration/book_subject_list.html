@@ -17,7 +17,13 @@
                         <tbody>
                             {% for book in object_list %}
                                 <tr>
-                                <td>{{ book.title }}</td>
+                                <td><a href="{% url 'account:book-subject-update' book.pk %}">{{ book.title }}</a></td>
+                                <td>
+                                    {% if user.is_superuser %}
+                                        <a class="badge badge-danger"
+                                           href="{% url 'account:book-subject-delete'  book.pk %}">حذف موضوع</a>
+                                    {% endif %}
+                                </td>
                                 </tr>
                             {% endfor %}
 
