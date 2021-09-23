@@ -37,7 +37,7 @@ class BookCreateView(LoginRequiredMixin, CreateView):
     template_name = 'registration/book_create_update.html'
 
 
-class BookDeleteView(SuperuserAccessMixin, LoginRequiredMixin, DeleteView):
+class BookDeleteView(SuperuserAccessMixin, DeleteView):
     model = Book
     success_url = reverse_lazy('account:home')
     template_name = 'registration/book_confirm_delete.html'
@@ -82,12 +82,43 @@ class BookPublisherCreateView(LoginRequiredMixin, CreateView):
     template_name = 'registration/book_publisher_create_update.html'
 
 
+class BookPublisherDeleteView(SuperuserAccessMixin, DeleteView):
+    model = BookPublisher
+    success_url = reverse_lazy('account:book-publisher-list')
+    template_name = 'registration/book_confirm_delete.html'
+
+
+class BookPublisherUpdateView(SuperuserAccessMixin, UpdateView):
+    model = BookPublisher
+    fields = [
+        'title',
+        'slug',
+        'description',
+    ]
+    template_name = 'registration/book_publisher_create_update.html'
+
+
 class BookSubjectListView(LoginRequiredMixin, ListView):
     queryset = BookSubject.objects.all()
     template_name = 'registration/book_subject_list.html'
 
 
 class BookSubjectCreateView(LoginRequiredMixin, CreateView):
+    model = BookSubject
+    fields = [
+        'title',
+        'slug',
+    ]
+    template_name = 'registration/book_subject_create_update.html'
+
+
+class BookSubjectDeleteView(SuperuserAccessMixin, DeleteView):
+    model = BookSubject
+    success_url = reverse_lazy('account:book-subject-list')
+    template_name = 'registration/book_confirm_delete.html'
+
+
+class BookSubjectUpdateView(SuperuserAccessMixin, UpdateView):
     model = BookSubject
     fields = [
         'title',
@@ -110,12 +141,42 @@ class BookTypeCreateView(LoginRequiredMixin, CreateView):
     template_name = 'registration/book_type_create_update.html'
 
 
+class BookTypeDeleteView(SuperuserAccessMixin, DeleteView):
+    model = BookType
+    success_url = reverse_lazy('account:book-type-list')
+    template_name = 'registration/book_confirm_delete.html'
+
+
+class BookTypeUpdateView(SuperuserAccessMixin, UpdateView):
+    model = BookType
+    fields = [
+        'title',
+        'slug',
+    ]
+    template_name = 'registration/book_type_create_update.html'
+
+
 class EducationYearListView(LoginRequiredMixin, ListView):
     queryset = EducationYear.objects.all()
     template_name = 'registration/education_year_list.html'
 
 
 class EducationYearCreateView(LoginRequiredMixin, CreateView):
+    model = EducationYear
+    fields = [
+        'title',
+        'slug',
+    ]
+    template_name = 'registration/education_year_create_update.html'
+
+
+class EducationYearDeleteView(SuperuserAccessMixin, DeleteView):
+    model = EducationYear
+    success_url = reverse_lazy('account:education-year-list')
+    template_name = 'registration/book_confirm_delete.html'
+
+
+class EducationYearUpdateView(SuperuserAccessMixin, UpdateView):
     model = EducationYear
     fields = [
         'title',
