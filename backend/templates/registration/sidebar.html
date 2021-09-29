@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load base_tags %}
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
@@ -36,70 +36,50 @@
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
-                    <ul class="nav nav-treeview">
+                    <ul class="ul-sidebar nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{% url 'account:home' %}" class="nav-link active">
-                                <i class="fa fa-list nav-icon"></i>
-                                <p>لیست کتاب ها</p>
-                            </a>
+
+                            {% link request 'home' 'لیست کتاب ها' %}
                         </li>
 
+
                         <li class="nav-item">
-                            <a href="{% url 'account:book-create' %}" class="nav-link">
-                                <i class="fa fa-edit nav-icon"></i>
-                                <p>افزودن کتاب جدید</p>
-                            </a>
-                        </li>
-                         <li class="nav-item">
-                            <a href="{% url 'account:book-publisher-list' %}" class="nav-link active">
-                                <i class="fa fa-list nav-icon"></i>
-                                <p>لیست انتشارات</p>
-                            </a>
+                            {% link request 'book-create' 'افزودن کتاب جدید' %}
                         </li>
                         <li class="nav-item">
-                            <a href="{% url 'account:book-publisher-create' %}" class="nav-link">
-                                <i class="fa fa-edit nav-icon"></i>
-                                <p>افزودن انتشارات جدید</p>
-                            </a>
-                        </li>
-                         <li class="nav-item">
-                            <a href="{% url 'account:book-subject-list' %}" class="nav-link active">
-                                <i class="fa fa-list nav-icon"></i>
-                                <p>لیست موضوعات</p>
-                            </a>
+                            {% link request 'book-publisher-list' 'لیست انتشارات' %}
+
                         </li>
                         <li class="nav-item">
-                            <a href="{% url 'account:book-subject-create' %}" class="nav-link">
-                                <i class="fa fa-edit nav-icon"></i>
-                                <p>افزودن موضوع جدید</p>
-                            </a>
+                            {% link request 'book-publisher-create' 'افزودن انتشارات جدید' %}
+
+                        </li>
+                        <li class="nav-item">
+                            {% link request 'book-subject-list' 'لیست موضوعات' %}
+                        </li>
+                        <li class="nav-item">
+
+                            {% link request 'book-subject-create' 'افزودن موضوع جدید' %}
+
                         </li>
 
                         </li>
-                         <li class="nav-item">
-                            <a href="{% url 'account:book-type-list' %}" class="nav-link active">
-                                <i class="fa fa-list nav-icon"></i>
-                                <p>لیست انواع</p>
-                            </a>
+                        <li class="nav-item">
+                            {% link request 'book-type-list' 'لیست انواع' %}
+
                         </li>
                         <li class="nav-item">
-                            <a href="{% url 'account:book-type-create' %}" class="nav-link">
-                                <i class="fa fa-edit nav-icon"></i>
-                                <p>افزودن نوع جدید</p>
-                            </a>
+                            {% link request 'book-type-create' 'افزودن نوع جدید' %}
+
                         </li>
 
                         <li class="nav-item">
-                            <a href="{% url 'account:education-year-list' %}" class="nav-link active">
-                                <i class="fa fa-list nav-icon"></i>
-                                <p>لیست سال تحصیلی</p>
-                            </a>
+                            {% link request 'education-year-list' 'لیست سال تحصیلی' %}
+
                         </li>
                         <li class="nav-item">
-                            <a href="{% url 'account:education-year-create' %}" class="nav-link">
-                                <i class="fa fa-edit nav-icon"></i>
-                                <p>افزودن سال تحصیلی جدید</p>
-                            </a>
+                            {% link request 'education-year-create' 'افزودن سال تحصیلی جدید' %}
+
                         </li>
 
                     </ul>
@@ -120,3 +100,4 @@
     </div>
     <!-- /.sidebar -->
 </aside>
+
