@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72ff8922-a459-4b40-8128-1132742beb80" name="Default Changelist" comment="convert grigorian">
-      <change afterPath="$PROJECT_DIR$/backend/templates/registration/list_base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/registration/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/registration/book_publisher_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/book_publisher_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/registration/book_subject_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/book_subject_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/registration/book_type_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/book_type_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/registration/education_year_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/education_year_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/registration/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/registration/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/sidebar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,35 +112,8 @@
       <workItem from="1631977449999" duration="7000" />
       <workItem from="1632236695678" duration="5823000" />
       <workItem from="1632408205199" duration="1843000" />
-      <workItem from="1632927804400" duration="10632000" />
-    </task>
-    <task id="LOCAL-00027" summary="remove additional method">
-      <created>1630249343984</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1630249343984</updated>
-    </task>
-    <task id="LOCAL-00028" summary="show full name of user that login">
-      <created>1630249385069</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1630249385069</updated>
-    </task>
-    <task id="LOCAL-00029" summary="remove an unusable import">
-      <created>1630249447527</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1630249447527</updated>
-    </task>
-    <task id="LOCAL-00030" summary="add login page template and use form to it works as a real login page">
-      <created>1630249504707</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1630249504707</updated>
+      <workItem from="1632927804400" duration="10946000" />
+      <workItem from="1632940285892" duration="9000" />
     </task>
     <task id="LOCAL-00031" summary="init of extensions">
       <created>1630419482756</created>
@@ -466,7 +430,35 @@
       <option name="project" value="LOCAL" />
       <updated>1632939892557</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="add logout icon and set it a link">
+      <created>1632939978833</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1632939978833</updated>
+    </task>
+    <task id="LOCAL-00077" summary="use base tags(link) to show current active page with add active class">
+      <created>1632940023375</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1632940023375</updated>
+    </task>
+    <task id="LOCAL-00078" summary="add location of base_tags.py">
+      <created>1632940053961</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1632940053961</updated>
+    </task>
+    <task id="LOCAL-00079" summary="a base template for list templates">
+      <created>1632940088748</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1632940088748</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,10 +466,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add option for education year and book type to create and view their list" />
-    <MESSAGE value="add url for book type list and create and education year list and create" />
-    <MESSAGE value="add book list view" />
-    <MESSAGE value="add url for Book app(home page)" />
     <MESSAGE value="include Book app urls" />
     <MESSAGE value="add book detail view" />
     <MESSAGE value="add url for book detail view and pagination" />
@@ -499,7 +487,11 @@
     <MESSAGE value="uncomment logout url" />
     <MESSAGE value="add template tag folder and base tags file" />
     <MESSAGE value="an a tag to show side bar according to base tags (link)" />
-    <option name="LAST_COMMIT_MESSAGE" value="an a tag to show side bar according to base tags (link)" />
+    <MESSAGE value="add logout icon and set it a link" />
+    <MESSAGE value="use base tags(link) to show current active page with add active class" />
+    <MESSAGE value="add location of base_tags.py" />
+    <MESSAGE value="a base template for list templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="a base template for list templates" />
   </component>
   <component name="WindowStateProjectService">
     <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630251721688">
