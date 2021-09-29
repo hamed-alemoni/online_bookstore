@@ -1,38 +1,24 @@
-{% extends 'registration\base.html' %}
+{% extends 'registration\list_base.html' %}
 {% block title %}{% block title-meta %}
     لیست انواع
 {% endblock %}{% endblock %}
-{% block main %}
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <!-- /.card-header -->
-                <div class="card-body table-responsive p-0">
-                    <table class="table table-hover">
-                        <thead>
-                        <tr>
-                            <th>عنوان انواع</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            {% for book in object_list %}
-                                <tr>
-                                <td><a href="{% url 'account:book-type-update' book.pk %}">{{ book.title }}</a></td>
-                                <td>
-                                    {% if user.is_superuser %}
-                                        <a class="badge badge-danger"
-                                           href="{% url 'account:book-type-delete'  book.pk %}">حذف نوع</a>
-                                    {% endif %}
-                                </td>
-                                </tr>
-                            {% endfor %}
-
-                        </tbody>
-                    </table>
-                </div>
-                <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-        </div>
-    </div>
+{% block titles %}
+    <tr>
+        <th>عنوان انواع</th>
+    </tr>
 {% endblock %}
+
+{% block for %}
+    {% for book in object_list %}
+        <tr>
+            <td><a href="{% url 'account:book-type-update' book.pk %}">{{ book.title }}</a></td>
+            <td>
+                {% if user.is_superuser %}
+                    <a class="badge badge-danger"
+                       href="{% url 'account:book-type-delete'  book.pk %}">حذف نوع</a>
+                {% endif %}
+            </td>
+        </tr>
+    {% endfor %}
+{% endblock %}
+

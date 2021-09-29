@@ -1,71 +1,58 @@
-{% extends 'registration\base.html' %}
+{% extends 'registration\list_base.html' %}
 {% block title %}{% block title-meta %}
     لیست کتاب ها
 {% endblock %}{% endblock %}
-{% block main %}
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <!-- /.card-header -->
-                <div class="card-body table-responsive p-0">
-                    <table class="table table-hover">
-                        <thead>
-                        <tr>
-                            <th>تصویر</th>
-                            <th>عنوان کتاب</th>
-                            <th>نویسنده</th>
-                            <th>توضیحات</th>
-                            <th>تعداد صفحات</th>
-                            <th>وزن به گرم</th>
-                            <th>سال انتشار</th>
-                            <th>شابک</th>
-                            <th>ناشر</th>
-                            <th>نوع کتاب</th>
-                            <th>نام درس</th>
-                            <th>سال تحصیلی</th>
-                            <th>تعداد</th>
-                            <th>قیمت</th>
-                            <th>موجودی</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {% for book in object_list %}
-                            <tr>
-                                <td><img src="{{ book.image.url }}" style="width: 100px; height: 60px;"></td>
-                                <td><a href="{% url 'account:book-update' book.pk %}">{{ book.title }}</a></td>
-                                <td>{{ book.author.get_full_name }}</td>
-                                <td>{{ book.description | striptags | truncatewords:"30" }}</td>
-                                <td>{{ book.number_of_pages }}</td>
-                                <td>{{ book.weight }}</td>
-                                <td>{{ book.year }}</td>
-                                <td>{{ book.international_standard_book_number }}</td>
-                                <td>{{ book.book_publisher }}</td>
-                                <td>{{ book.book_type }}</td>
-                                <td>{{ book.book_subject }}</td>
-                                <td>{{ book.book_education_year }}</td>
-                                <td>{{ book.amount }}</td>
-                                <td>{{ book.price }}</td>
-                                <td>
-                                    {% if book.status %}
-                                        <span class="badge badge-success">موجود</span>
-                                    {% else %}
-                                        <span class="badge badge-danger">نا موجود</span>
-                                    {% endif %}
-                                    {% if user.is_superuser %}
-                                        <a class="badge badge-danger"
-                                           href="{% url 'account:book-delete'  book.pk %}">حذف کتاب</a>
-                                    {% endif %}
-                                </td>
-
-                            </tr>
-                        {% endfor %}
-
-                        </tbody>
-                    </table>
-                </div>
-                <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-        </div>
-    </div>
+{% block titles %}
+    <tr>
+        <th>تصویر</th>
+        <th>عنوان کتاب</th>
+        <th>نویسنده</th>
+        <th>توضیحات</th>
+        <th>تعداد صفحات</th>
+        <th>وزن به گرم</th>
+        <th>سال انتشار</th>
+        <th>شابک</th>
+        <th>ناشر</th>
+        <th>نوع کتاب</th>
+        <th>نام درس</th>
+        <th>سال تحصیلی</th>
+        <th>تعداد</th>
+        <th>قیمت</th>
+        <th>موجودی</th>
+    </tr>
 {% endblock %}
+
+{% block for %}
+    {% for book in object_list %}
+        <tr>
+            <td><img src="{{ book.image.url }}" style="width: 100px; height: 60px;"></td>
+            <td><a href="{% url 'account:book-update' book.pk %}">{{ book.title }}</a></td>
+            <td>{{ book.author.get_full_name }}</td>
+            <td>{{ book.description | striptags | truncatewords:"30" }}</td>
+            <td>{{ book.number_of_pages }}</td>
+            <td>{{ book.weight }}</td>
+            <td>{{ book.year }}</td>
+            <td>{{ book.international_standard_book_number }}</td>
+            <td>{{ book.book_publisher }}</td>
+            <td>{{ book.book_type }}</td>
+            <td>{{ book.book_subject }}</td>
+            <td>{{ book.book_education_year }}</td>
+            <td>{{ book.amount }}</td>
+            <td>{{ book.price }}</td>
+            <td>
+                {% if book.status %}
+                    <span class="badge badge-success">موجود</span>
+                {% else %}
+                    <span class="badge badge-danger">نا موجود</span>
+                {% endif %}
+                {% if user.is_superuser %}
+                    <a class="badge badge-danger"
+                       href="{% url 'account:book-delete'  book.pk %}">حذف کتاب</a>
+                {% endif %}
+            </td>
+
+        </tr>
+    {% endfor %}
+{% endblock %}
+
+
