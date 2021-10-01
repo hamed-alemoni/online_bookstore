@@ -3,6 +3,8 @@ from django.urls import reverse_lazy
 from .mixins import SuperuserAccessMixin
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from Book.models import Book, BookPublisher, BookSubject, BookType, EducationYear
+from django.contrib.auth import get_user_model
+from .forms import ProfileForm
 
 
 # Create your views here.
@@ -183,3 +185,21 @@ class EducationYearUpdateView(SuperuserAccessMixin, UpdateView):
         'slug',
     ]
     template_name = 'registration/education_year_create_update.html'
+
+
+# view to show profile of user
+class Profile(UpdateView):
+    model = get_user_model()
+    template_name = 'registration/profile.html'
+    success_url = reverse_lazy('account:profile')
+    form_class = ProfileForm
+
+    def get_form_kwargs(self):
+        kwargs = super(Profile, self).get_form_kwargs()
+        kwargs.update({
+            'user': self.request.user
+        })
+        return kwargs
+
+    def get_object(self, **kwargs):
+        return get_user_model().objects.get(pk=self.request.user.pk)
