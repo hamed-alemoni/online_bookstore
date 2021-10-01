@@ -21,6 +21,7 @@ from .views import (
     EducationYearCreateView,
     EducationYearUpdateView,
     EducationYearDeleteView,
+    Profile
 
 )
 
@@ -59,4 +60,5 @@ urlpatterns += [
     path('education-year/create/', EducationYearCreateView.as_view(), name='education-year-create'),
     path('education-year/update/<int:pk>', EducationYearUpdateView.as_view(), name='education-year-update'),
     path('education-year/delete/<int:pk>', EducationYearDeleteView.as_view(), name='education-year-delete'),
+    path('profile', Profile.as_view(), name='profile')
 ]
