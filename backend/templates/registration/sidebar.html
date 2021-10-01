@@ -39,59 +39,54 @@
                     <ul class="ul-sidebar nav nav-treeview">
                         <li class="nav-item">
 
-                            {% link request 'home' 'لیست کتاب ها' %}
+                            {% link request 'home' 'لیست کتاب ها' 'fa fa-list nav-icon' %}
                         </li>
 
 
                         <li class="nav-item">
-                            {% link request 'book-create' 'افزودن کتاب جدید' %}
+                            {% link request 'book-create' 'افزودن کتاب جدید' 'fa fa-edit nav-icon' %}
                         </li>
                         <li class="nav-item">
-                            {% link request 'book-publisher-list' 'لیست انتشارات' %}
-
-                        </li>
-                        <li class="nav-item">
-                            {% link request 'book-publisher-create' 'افزودن انتشارات جدید' %}
+                            {% link request 'book-publisher-list' 'لیست انتشارات' 'fa fa-list nav-icon'%}
 
                         </li>
                         <li class="nav-item">
-                            {% link request 'book-subject-list' 'لیست موضوعات' %}
-                        </li>
-                        <li class="nav-item">
-
-                            {% link request 'book-subject-create' 'افزودن موضوع جدید' %}
-
-                        </li>
+                            {% link request 'book-publisher-create' 'افزودن انتشارات جدید' 'fa fa-edit nav-icon' %}
 
                         </li>
                         <li class="nav-item">
-                            {% link request 'book-type-list' 'لیست انواع' %}
+                            {% link request 'book-subject-list' 'لیست موضوعات' 'fa fa-list nav-icon' %}
+                        </li>
+                        <li class="nav-item">
+
+                            {% link request 'book-subject-create' 'افزودن موضوع جدید' 'fa fa-edit nav-icon'%}
+
+                        </li>
 
                         </li>
                         <li class="nav-item">
-                            {% link request 'book-type-create' 'افزودن نوع جدید' %}
+                            {% link request 'book-type-list' 'لیست انواع' 'fa fa-list nav-icon' %}
+
+                        </li>
+                        <li class="nav-item">
+                            {% link request 'book-type-create' 'افزودن نوع جدید' 'fa fa-edit nav-icon'%}
 
                         </li>
 
                         <li class="nav-item">
-                            {% link request 'education-year-list' 'لیست سال تحصیلی' %}
+                            {% link request 'education-year-list' 'لیست سال تحصیلی' 'fa fa-list nav-icon' %}
 
                         </li>
                         <li class="nav-item">
-                            {% link request 'education-year-create' 'افزودن سال تحصیلی جدید' %}
+                            {% link request 'education-year-create' 'افزودن سال تحصیلی جدید' 'fa fa-edit nav-icon'%}
 
                         </li>
 
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
-                        <p>
-                            پروفایل
-                            <span class="right badge badge-danger">جدید</span>
-                        </p>
-                    </a>
+                    {% link request 'profile' 'پروفایل' 'nav-icon fas fa-th'%}
+
                 </li>
 
             </ul>
