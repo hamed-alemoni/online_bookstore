@@ -1,6 +1,6 @@
 from django.db import models
 from django.urls import reverse
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from django.utils import timezone
 from django.utils.html import format_html
 from extensions.utils import jalali_converter
@@ -66,7 +66,7 @@ class Book(models.Model):
     slug = models.SlugField(max_length=100, unique=True)
     description = models.TextField()
     image = models.ImageField(upload_to='images')
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='authors')
+    author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, related_name='authors')
     number_of_pages = models.IntegerField(blank=False, null=False)
     weight = models.IntegerField(blank=False, null=False)
     released_year = models.DateTimeField(default=timezone.now)
