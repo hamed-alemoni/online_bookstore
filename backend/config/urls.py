@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from dj_rest_auth.views import PasswordResetConfirmView
-
+from django.contrib.auth.views import LoginView
 urlpatterns = [
     path('', include('Book.urls')),
+    path('', include('django.contrib.auth.urls')),
+    path('login/', LoginView.as_view(), name='login'),
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),  # add api urls to main urls file
     path('account/', include('account.urls')),
