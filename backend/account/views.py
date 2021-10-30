@@ -5,6 +5,14 @@ from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from Book.models import Book, BookPublisher, BookSubject, BookType, EducationYear
 from django.contrib.auth import get_user_model
 from .forms import ProfileForm
+from django.http import HttpResponse
+from .forms import SignupForm
+from django.contrib.sites.shortcuts import get_current_site
+from django.utils.encoding import force_bytes, force_text
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from django.template.loader import render_to_string
+from .tokens import account_activation_token
+from django.core.mail import EmailMessage
 
 
 # Create your views here.
@@ -203,3 +211,42 @@ class Profile(UpdateView):
 
     def get_object(self, **kwargs):
         return get_user_model().objects.get(pk=self.request.user.pk)
+
+
+class Register(CreateView):
+    form_class = SignupForm
+    template_name = 'registration/register.html'
+
+    def form_valid(self, form):
+        user = form.save(commit=False)
+        user.is_active = False
+        user.save()
+        current_site = get_current_site(self.request)
+        context = {
+            'user': user,
+            'domain': current_site.domain,
+            'uid': urlsafe_base64_encode(force_bytes(user.pk)),
+            'token': account_activation_token.make_token(user),
+        }
+        mail_subject = 'لینک فعالسازی حساب کاربری .'
+        message = render_to_string('registration/active_account.html', context=context)
+        to_email = form.cleaned_data.get('email')
+        email = EmailMessage(
+            mail_subject, message, to=[to_email]
+        )
+        email.send()
+        return HttpResponse('برای کامل شدن ثبت نام لطفا حساب کاربری خود را فعال کنید.')
+
+
+def activate(request, uidb64, token):
+    try:
+        uid = force_text(urlsafe_base64_decode(uidb64))
+        user = get_user_model().objects.get(pk=uid)
+    except(TypeError, ValueError, OverflowError, get_user_model().DoesNotExist):
+        user = None
+    if user is not None and account_activation_token.check_token(user, token):
+        user.is_active = True
+        user.save()
+        return HttpResponse('ممنون برای ثبت نام در سایت برای وارد شدن به حساب کاربری <a/> کلیک کنید "a href="/login>.')
+    else:
+        return HttpResponse('لینک فعالسازی منقضی شده است.')
