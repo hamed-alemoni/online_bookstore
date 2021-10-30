@@ -14,13 +14,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 from dj_rest_auth.views import PasswordResetConfirmView
 from django.contrib.auth.views import LoginView
+from account.views import Register, activate
+
 urlpatterns = [
     path('', include('Book.urls')),
     path('', include('django.contrib.auth.urls')),
     path('login/', LoginView.as_view(), name='login'),
+    path('register/', Register.as_view(), name='register'),
+    path(r'^activate/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
+            activate, name='activate'),
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),  # add api urls to main urls file
     path('account/', include('account.urls')),
