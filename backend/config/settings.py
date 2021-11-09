@@ -55,6 +55,8 @@ INSTALLED_APPS = [
     'dj_rest_auth.registration',
     'rest_framework.authtoken',
     'django_filters',
+    'django_gravatar',
+    'comment',
 ]
 
 MIDDLEWARE = [
@@ -176,4 +178,3 @@ SITE_ID = 1
 REST_USE_JWT = True
 JWT_AUTH_COOKIE = 'access'
 JWT_AUTH_REFRESH_COOKIE = 'refresh'
-
