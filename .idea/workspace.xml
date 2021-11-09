@@ -4,6 +4,7 @@
     <list default="true" id="72ff8922-a459-4b40-8128-1132742beb80" name="Default Changelist" comment="convert grigorian">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/registration/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/sidebar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +45,12 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -82,6 +83,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -119,84 +121,11 @@
       <workItem from="1633105945143" duration="2916000" />
       <workItem from="1634137158973" duration="8309000" />
       <workItem from="1634221173975" duration="9618000" />
-      <workItem from="1634401196145" duration="1618000" />
-    </task>
-    <task id="LOCAL-00038" summary="html view for book subject list">
-      <created>1631545247781</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1631545247781</updated>
-    </task>
-    <task id="LOCAL-00039" summary="html view for book subject create update">
-      <created>1631545357776</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1631545357776</updated>
-    </task>
-    <task id="LOCAL-00040" summary="html view for book publisher list">
-      <created>1631545389826</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1631545389826</updated>
-    </task>
-    <task id="LOCAL-00041" summary="html view for book publisher create update">
-      <created>1631545408065</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1631545408065</updated>
-    </task>
-    <task id="LOCAL-00042" summary="add 4 items to this view to create BookPublisher BookSubject and see list of them">
-      <created>1631545515725</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1631545515725</updated>
-    </task>
-    <task id="LOCAL-00043" summary="add url for book publisher and book subject to create them and see their list">
-      <created>1631545585864</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1631545585864</updated>
-    </task>
-    <task id="LOCAL-00044" summary="add get absolute url for BookPublisher and BookSubject models">
-      <created>1631545628894</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1631545628894</updated>
-    </task>
-    <task id="LOCAL-00045" summary="add get absolute url to BookType and EducationYear models">
-      <created>1631621169564</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1631621169564</updated>
-    </task>
-    <task id="LOCAL-00046" summary="add BookType list and create view and EducationYear list and create view">
-      <created>1631621222124</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1631621222124</updated>
-    </task>
-    <task id="LOCAL-00047" summary="html view for education year create update">
-      <created>1631621263738</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1631621263738</updated>
-    </task>
-    <task id="LOCAL-00048" summary="html view for education year list">
-      <created>1631621284686</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1631621284686</updated>
+      <workItem from="1634401196145" duration="2257000" />
+      <workItem from="1634379174815" duration="32000" />
+      <workItem from="1635606282610" duration="4455000" />
+      <workItem from="1635705913004" duration="529000" />
+      <workItem from="1636476341206" duration="2575000" />
     </task>
     <task id="LOCAL-00049" summary="html view for book type create update">
       <created>1631621314433</created>
@@ -464,25 +393,91 @@
       <option name="project" value="LOCAL" />
       <updated>1633109530216</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="generate unique token">
+      <created>1635610938681</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1635610938682</updated>
+    </task>
+    <task id="LOCAL-00088" summary="add two view for register users and active their account">
+      <created>1635610996814</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1635610996814</updated>
+    </task>
+    <task id="LOCAL-00089" summary="add register template">
+      <created>1635611019528</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1635611019529</updated>
+    </task>
+    <task id="LOCAL-00090" summary="add register link in login page">
+      <created>1635611068951</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1635611068951</updated>
+    </task>
+    <task id="LOCAL-00091" summary="add register and activate new account urls">
+      <created>1635611149787</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1635611149787</updated>
+    </task>
+    <task id="LOCAL-00092" summary="add activate account template">
+      <created>1635611187352</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1635611187352</updated>
+    </task>
+    <task id="LOCAL-00093" summary="add a new form for register new account">
+      <created>1635611209333</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1635611209333</updated>
+    </task>
+    <task id="LOCAL-00094" summary="add urls for comment section">
+      <created>1636478748961</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1636478748961</updated>
+    </task>
+    <task id="LOCAL-00095" summary="add a property to Book model to use comment section">
+      <created>1636478802940</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1636478802940</updated>
+    </task>
+    <task id="LOCAL-00096" summary="load comment tags to the product-details template">
+      <created>1636478911060</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1636478911060</updated>
+    </task>
+    <task id="LOCAL-00097" summary="add author field to fill and fix the bug :)">
+      <created>1636478951020</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1636478951020</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="write super user access mixin" />
-    <MESSAGE value="add two views to delete and update books" />
-    <MESSAGE value="add two urls to delete and update books" />
-    <MESSAGE value="add book title as a link to edit it" />
-    <MESSAGE value="add home page link" />
-    <MESSAGE value="add all views about delete and update for all models" />
-    <MESSAGE value="add all urls about delete and update for all models" />
-    <MESSAGE value="add update and delete option for book publisher" />
-    <MESSAGE value="add update and delete option for book subject" />
-    <MESSAGE value="add update and delete option for book type" />
-    <MESSAGE value="add update and delete option for education year" />
     <MESSAGE value="uncomment logout url" />
     <MESSAGE value="add template tag folder and base tags file" />
     <MESSAGE value="an a tag to show side bar according to base tags (link)" />
@@ -497,60 +492,17 @@
     <MESSAGE value="use new attr (classes) in html tags" />
     <MESSAGE value="add profile url" />
     <MESSAGE value="create profile html view" />
-    <option name="LAST_COMMIT_MESSAGE" value="create profile html view" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630251721688">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1630251721688" />
-    <state x="541" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1634401914975">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="541" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1634401914975" />
-    <state x="498" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1629293261145">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="498" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1629293261145" />
-    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1633109529156">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1633109529156" />
-    <state x="547" y="153" key="FileChooserDialogImpl" timestamp="1630244815828">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="547" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1630244815828" />
-    <state width="1491" height="210" key="GridCell.Tab.0.bottom" timestamp="1630251724108">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1491" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1630251724108" />
-    <state width="1491" height="210" key="GridCell.Tab.0.center" timestamp="1630251724107">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1491" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1630251724107" />
-    <state width="1491" height="210" key="GridCell.Tab.0.left" timestamp="1630251724107">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1491" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1630251724107" />
-    <state width="1491" height="210" key="GridCell.Tab.0.right" timestamp="1630251724108">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1491" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1630251724108" />
-    <state width="187" height="463" key="HiddenNamespacesPopup" timestamp="1629291724335">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="187" height="463" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1629291724335" />
-    <state x="276" y="54" key="SettingsEditor" timestamp="1630245706887">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="276" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1630245706887" />
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1634401209540">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="463" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1634401209540" />
-    <state x="509" y="55" key="refactoring.ChangeSignatureDialog" timestamp="1633021950622">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="509" y="55" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1633021950622" />
+    <MESSAGE value="generate unique token" />
+    <MESSAGE value="add two view for register users and active their account" />
+    <MESSAGE value="add register template" />
+    <MESSAGE value="add register link in login page" />
+    <MESSAGE value="add register and activate new account urls" />
+    <MESSAGE value="add activate account template" />
+    <MESSAGE value="add a new form for register new account" />
+    <MESSAGE value="add urls for comment section" />
+    <MESSAGE value="add a property to Book model to use comment section" />
+    <MESSAGE value="load comment tags to the product-details template" />
+    <MESSAGE value="add author field to fill and fix the bug :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add author field to fill and fix the bug :)" />
   </component>
 </project>
