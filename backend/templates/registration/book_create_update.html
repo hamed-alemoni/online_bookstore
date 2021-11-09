@@ -14,6 +14,7 @@
             <div class="card-body">
                 <form method="post">{% csrf_token %}
         <div class="form-row">
+
             <div class="form-group col-md-6 mb-0">
                 {{ form.title|as_crispy_field }}
             </div>
@@ -71,6 +72,10 @@
             <div class="form-group col-md-6 mb-0">
                 {{ form.book_education_year|as_crispy_field }}
             </div>
+
+             <div class="form-group col-md-6 mb-0">
+                {{ form.author|as_crispy_field }}
+             </div>
         </div>
         <button class="btn btn-success" formenctype="multipart/form-data">افزودن</button>
     </form>
