@@ -25,8 +25,10 @@ urlpatterns = [
     path('login/', LoginView.as_view(), name='login'),
     path('register/', Register.as_view(), name='register'),
     path(r'^activate/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
-            activate, name='activate'),
+         activate, name='activate'),
     path('admin/', admin.site.urls),
+    path('comment/', include('comment.urls')),
+    path('api/', include('comment.api.urls')),
     path('api/', include('api.urls')),  # add api urls to main urls file
     path('account/', include('account.urls')),
     path('api/dj-rest-auth/', include('dj_rest_auth.urls')),
