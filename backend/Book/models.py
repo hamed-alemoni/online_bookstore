@@ -4,7 +4,8 @@ from django.contrib.auth import get_user_model
 from django.utils import timezone
 from django.utils.html import format_html
 from extensions.utils import jalali_converter
-
+from django.contrib.contenttypes.fields import GenericRelation
+from comment.models import Comment
 
 # Create your models here.
 
@@ -82,6 +83,7 @@ class Book(models.Model):
     book_subject = models.ForeignKey(BookSubject, default=None, on_delete=models.CASCADE, related_name='book_subjects')
     book_education_year = models.ForeignKey(EducationYear, default=None, on_delete=models.CASCADE,
                                             related_name='book_education_year')
+    comments = GenericRelation(Comment)
 
     def get_absolute_url(self):
         return reverse('account:home')
