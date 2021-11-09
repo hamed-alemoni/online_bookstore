@@ -1,143 +1,158 @@
 {% load static %}
+{% load comment_tags %}
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>PHPJabbers.com | Free Book Online Store Website Template</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{% static  'online_bookstore/assets/bootstrap/css/bootstrap.min.css' %}" />
-		<link rel="stylesheet" href="{% static  'online_bookstore/assets/css/main.css' %}" />
-		<noscript><link rel="stylesheet" href="{% static  'online_bookstore/assets/css/noscript.css'%}" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+    <title>PHPJabbers.com | Free Book Online Store Website Template</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="{% static  'online_bookstore/assets/bootstrap/css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static  'online_bookstore/assets/css/main.css' %}"/>
+    <noscript>
+        <link rel="stylesheet" href="{% static  'online_bookstore/assets/css/noscript.css' %}"/>
+    </noscript>
+</head>
+<body class="is-preload">
+<!-- Wrapper -->
+<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+    <!-- Header -->
+    <header id="header">
+        <div class="inner">
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="fa fa-book"></span> <span class="title">Book Online Store Website</span>
-								</a>
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <span class="fa fa-book"></span> <span class="title">Book Online Store Website</span>
+            </a>
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+            <!-- Nav -->
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                </ul>
+            </nav>
 
-						</div>
-					</header>
+        </div>
+    </header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="{% url 'book:home' %}">خانه</a></li>
+    <!-- Menu -->
+    <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="{% url 'book:home' %}">خانه</a></li>
 
-							<li><a href="products.html" class="active">Products</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
 
-							<li><a href="checkout.html">Checkout</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
 
-							<li>
-								<a href="#" class="dropdown-toggle">About</a>
+            <li>
+                <a href="#" class="dropdown-toggle">About</a>
 
-								<ul>
-									<li><a href="about.html">About Us</a></li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="testimonials.html">Testimonials</a></li>
-									<li><a href="terms.html">Terms</a></li>
-								</ul>
-							</li>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                </ul>
+            </li>
 
-							<li><a href="contact.html">Contact Us</a></li>
-						</ul>
-					</nav>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>{{ object.title }}<span class="pull-right"> {{ object.price }} تومان    </span></h1>
-							
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-md-5">
-										<img src="{{ object.image.url }}" class="img-fluid" alt="">
-									</div>
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+            <h1>{{ object.title }}<span class="pull-right"> {{ object.price }} تومان    </span></h1>
 
-									<div class="col-md-7">
-                                        <br>
-                                        <p class="text text-primary text-justify text-center">{{ object.description }}</p>
-                                        <br>
-                                        <br>
-                                        <p class="text text-right text-muted">ناشر      :   ‌ <span class="text-dark">{{ object.book_publisher }}</span></p>
-                                        <p class="text text-right text-muted">سال تحصیلی      :      <span class="text-dark">{{ object.book_education_year }}</span></p>
-                                        <p class="text text-right text-muted">نویسنده:‌ <span class="text-dark">{{ object.author.get_full_name }}</span></p>
-                                        <p class="text text-right text-muted">نوع کتاب: <span class="text-dark">{{ object.book_type }}</span></p>
-                                        <p class="text text-right text-muted">نام درس: <span class="text-dark">{{ object.book_subject }}</span></p>
-                                        <p class="text text-right text-muted">شابک:‌ <span class="text-dark">{{ object.international_standard_book_number }}</span></p>
-                                        <p class="text text-right text-muted">تعداد صفحات:‌‌ <span class="text-dark">{{ object.number_of_pages }}</span></p>
-                                        <p class="text text-right text-muted">وزن (گرم):‌‌‌ <span class="text-dark">{{ object.weight }}</span></p>
-                                        <p class="text text-right text-muted">سال انتشار:‌‌‌‌ <span class="text-dark">{{ object.year }}</span></p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="{{ object.image.url }}" class="img-fluid" alt="">
+                    </div>
 
-										<div class="row">
+                    <div class="col-md-7">
+                        <br>
+                        <p class="text text-primary text-justify text-center">{{ object.description }}</p>
+                        <br>
+                        <br>
+                        <p class="text text-right text-muted">ناشر : ‌ <span
+                                class="text-dark">{{ object.book_publisher }}</span></p>
+                        <p class="text text-right text-muted">سال تحصیلی : <span
+                                class="text-dark">{{ object.book_education_year }}</span></p>
+                        <p class="text text-right text-muted">نویسنده:‌ <span
+                                class="text-dark">{{ object.author.get_full_name }}</span></p>
+                        <p class="text text-right text-muted">نوع کتاب: <span
+                                class="text-dark">{{ object.book_type }}</span></p>
+                        <p class="text text-right text-muted">نام درس: <span
+                                class="text-dark">{{ object.book_subject }}</span></p>
+                        <p class="text text-right text-muted">شابک:‌ <span
+                                class="text-dark">{{ object.international_standard_book_number }}</span></p>
+                        <p class="text text-right text-muted">تعداد صفحات:‌‌ <span
+                                class="text-dark">{{ object.number_of_pages }}</span></p>
+                        <p class="text text-right text-muted">وزن (گرم):‌‌‌ <span
+                                class="text-dark">{{ object.weight }}</span></p>
+                        <p class="text text-right text-muted">سال انتشار:‌‌‌‌ <span
+                                class="text-dark">{{ object.year }}</span></p>
 
-
-							                <div class="col-sm-8">
-
-
-							                  	<div class="row">
-
-
-								                    <div class="col-sm-6">
-							                      		<input type="submit" class="primary bg-success" value="افزودن به سبد کالا">
-								                    </div>
-							                  	</div>
-							                </div>
-							            </div>
-									</div>
-								</div>
-							</div>
-
-							<br>
-							<br>
+                        <div class="row">
 
 
-						</div>
-					</div>
+                            <div class="col-sm-8">
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<ul class="icons">
-									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								</ul>
 
-								&nbsp;
-							</section>
+                                <div class="row">
 
-							<ul class="copyright">
-								<li>Copyright © 2020 Company Name </li>
-								<li>Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></li>
-							</ul>
-						</div>
-					</footer>
 
-			</div>
+                                    <div class="col-sm-6">
+                                        <input type="submit" class="primary bg-success" value="افزودن به سبد کالا">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<!-- Scripts -->
-			<script src="{% static  'online_bookstore/assets/js/jquery.min.js'%}"></script>
-			<script src="{% static  'online_bookstore/assets/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
-			<script src="{% static  'online_bookstore/assets/js/jquery.scrolly.min.js'%}"></script>
-			<script src="{% static  'online_bookstore/assets/js/jquery.scrollex.min.js'%}"></script>
-			<script src="{% static  'online_bookstore/assets/js/main.js'%}"></script>
+            <br>
+            <br>
+            <div>
+                {% render_comments object request %}
+                {% include_bootstrap %}
+            </div>
 
-	</body>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <section>
+                <ul class="icons">
+                    <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                </ul>
+
+                &nbsp;
+            </section>
+
+            <ul class="copyright">
+                <li>Copyright © 2020 Company Name</li>
+                <li>Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="{% static  'online_bookstore/assets/js/jquery.min.js' %}"></script>
+<script src="{% static  'online_bookstore/assets/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static  'online_bookstore/assets/js/jquery.scrolly.min.js' %}"></script>
+<script src="{% static  'online_bookstore/assets/js/jquery.scrollex.min.js' %}"></script>
+<script src="{% static  'online_bookstore/assets/js/main.js' %}"></script>
+
+</body>
 </html>
